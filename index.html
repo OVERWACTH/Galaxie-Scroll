@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <title>Galaxie</title>
+</head>
+<body data-scroll-container >
+    <nav>
+        <h2>
+            Liste de galaxies proches
+        </h2>
+    </nav>
+    <div>
+        <h1 class="galaxie-1" data-scroll data-scroll-direction="vertical" data-scroll-speed="1">La voie Lactee </h1>
+        <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" src="/images/img1.jpg" alt="images">
+    </div>
+
+    <div>
+        <h1 class="galaxie-2" data-scroll data-scroll-direction="vertical" data-scroll-speed="2">Galaxie Naine du grand chien  </h1>
+        <img data-scroll data-scroll-direction="vertical" data-scroll-speed="3" src="/images/img2.jpg" alt="images">
+    </div>
+
+    <div>
+        <h1  class="galaxie-3" data-scroll data-scroll-direction="vertical" data-scroll-speed="4">Grand nuage de Magellan </h1>
+        <img data-scroll data-scroll-direction="vertical" data-scroll-speed="4" src="/images/img3.jpg" alt="images">
+    </div>
+
+    <div>
+        <h1 class="galaxie-4" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">Cetus 3</h1>
+        <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" src="/images/img4.jpg" alt="images">
+    </div>
+    <footer data-scroll data-scroll-direction="horizontal" data-scroll-speed="-1">
+        copyright © RAMBELOSON Nirina Bryan 
+    </footer>
+    <div class="scroll-espace"></div>
+    <div class="scroll-espace"></div>
+    <div class="scroll-espace"></div>
+    <div class="scroll-espace"></div>
+    <div class="scroll-espace"></div>
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+            const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
+</body>
+</html>
